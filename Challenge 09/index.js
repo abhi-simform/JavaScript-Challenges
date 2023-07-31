@@ -129,4 +129,4 @@ const users = [
 
 // Using reduce method create the sum of employeeNumber of all users
 
-// Bonus: You can chain the array methods so try using map on the filtered array of senior engineers and create and array of their mobile numbers
+// Bonus: You can chain the array methods so try using map on the filtered array of senior engineers and create and array of their employee numbers

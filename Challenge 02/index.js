@@ -4,14 +4,18 @@
 
 // Convert the below code to have shorthand property names
 
-function formatMessage(name, id, avatar) {
+function formatMessage(name = "Hero", id = 10, avatar) {
   return {
-    name: name,
-    id: id,
-    avatar: avatar,
+    name,
+    id,
+    avatar,
     timestamp: Date.now(),
     save: function () {
-      console.log('Message saved');
+      console.log(
+        `${name} your id ${id} is updated in the Message saved on ${this.timestamp}`
+      );
     },
   };
 }
+
+formatMessage().save();

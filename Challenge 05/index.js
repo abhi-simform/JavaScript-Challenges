@@ -4,9 +4,15 @@
 
 // If no value is passed in function call the function should print '"YourFirstName" "YourLastName" is "YourAge" years old and lives in "YourLocation"
 
-function printDetails(fname, lname, age, location) {
+function printDetails(
+  fname = "Hero",
+  lname = "Heroji",
+  age = 19,
+  location = "Dubai"
+) {
   const details = `${fname} ${lname} is ${age} years old and lives in ${location}`;
   console.log(details);
 }
 
-printDetails('Abhishek', 'Sawant', 23, 'Vadodara');
+printDetails("Abhishek", "Sawant", 23, "Vadodara");
+printDetails();

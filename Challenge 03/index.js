@@ -9,3 +9,10 @@ function mathFunction(a, b) {
   const division = a / b;
   return { addition, subtraction, multiplication, division };
 }
+console.log(mathFunction(10, 5));
+
+const mathArrowFunction = (a, b) =>
+  `addition ${a + b}, subtraction ${a - b}, multiplication ${a * b}, division ${
+    a / b
+  }`;
+console.log(mathArrowFunction(10, 5));

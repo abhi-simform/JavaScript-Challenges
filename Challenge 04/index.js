@@ -4,18 +4,15 @@
 // The console output should look like 'Abhishek Sawant is 23 years old and lives in Vadodara'
 
 const person = {
-  fname: '',
-  lname: '',
+  fname: "Abhishek",
+  lname: "Sawant",
   age: 23,
-  location: '',
+  location: "Vadodara",
 };
 
 function printDetails(person) {
-  const firstName = person.fname;
-  const lastName = person.lname;
-  const age = person.age;
-  const location = person.location;
-  const details = `${firstName} ${lastName} is ${age} years old and lives in ${location}`;
+  const { fname, lname, age, location } = person;
+  const details = `${fname} ${lname} is ${age} years old and lives in ${location}`;
   console.log(details);
 }
 
